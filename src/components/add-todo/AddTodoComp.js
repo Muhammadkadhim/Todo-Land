@@ -31,7 +31,7 @@ export default function AddTodoComp() {
     return (
         <div className="container">
             <AddCategoryComp />
-            <header>
+            <header className="header" style={{ "--space": "center" }}>
                 <h1>New Todo</h1>
             </header>
             <form className="form" onSubmit={onSubmitHandler}>
