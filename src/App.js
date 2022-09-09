@@ -7,7 +7,7 @@ import {
     TodosComp,
     TrashComp,
 } from "./components";
-import Layout from "./leyout/Layout";
+import Layout from "./layout/Layout";
 
 function App() {
     return (
