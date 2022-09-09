@@ -80,9 +80,9 @@ export default function EditTodoComp() {
                     <select
                         name="newCategory"
                         id="newCategory"
-                        onChange={onChangeHandler}
+                        defaultValue={"DEFAULT"}
                     >
-                        <option disabled selected>
+                        <option disabled value="DEFAULT">
                             Select A Category
                         </option>
                         {categories.map((category) => {
