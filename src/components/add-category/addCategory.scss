@@ -1,0 +1,39 @@
+@import "../../scss/partials/colors";
+
+.wrapper {
+    z-index: 20000;
+
+    &.hidden {
+        display: none;
+    }
+
+    .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $overlay-color;
+    }
+}
+
+.add-category {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 300px;
+    height: fit-content;
+    padding: 2em;
+    border-radius: 10px;
+    background-color: $primary-color-100;
+
+    .close-btn {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+    }
+}

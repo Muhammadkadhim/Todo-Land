@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./scss/global.scss";
+import { Routes, Route } from "react-router-dom";
+import {
+    AddTodoComp,
+    CompletedTodosComp,
+    EditTodoComp,
+    TodosComp,
+    TrashComp,
+} from "./components";
+import Layout from "./leyout/Layout";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Layout>
+            <Routes>
+                <Route path="/" element={<TodosComp />} />
+                <Route
+                    path="/completed-todos"
+                    element={<CompletedTodosComp />}
+                />
+                <Route path="/trash" element={<TrashComp />} />
+                <Route path="/add-todo" element={<AddTodoComp />} />
+                <Route path="/edit-todo/:todoId" element={<EditTodoComp />} />
+            </Routes>
+        </Layout>
+    );
 }
 
 export default App;

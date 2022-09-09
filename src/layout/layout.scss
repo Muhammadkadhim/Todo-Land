@@ -1,0 +1,14 @@
+.layout {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 100vh;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+
+    main {
+        flex-grow: 1;
+        overflow-y: scroll;
+        margin-bottom: 6em;
+    }
+}
